@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 
-int main()
+int main(void)
 {
-    char *will_never_hear_again =
-        "Hey TJ, when is the memory course in C gonna be done?";
-
-    printf("%s\n", will_never_hear_again);
+    char helloWorld[100] = "Hello World";
+    printf("%s\n", helloWorld);
+    char c[24] = "I love ";
+    strcat(c, "systems!");
+    printf("%s\n", c);
     return 0;
 }
